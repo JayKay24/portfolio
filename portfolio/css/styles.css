@@ -18,6 +18,14 @@ img {
   width: 300px;
 }
 
+a {
+  color: #ffe660;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 /* Profile section
 --------------------------------------*/
 header {
@@ -29,6 +37,22 @@ header {
 --------------------------------------*/
 .projects {
   background: #f7fff7;
+}
+
+.projects a {
+  color: #2f3061;
+}
+
+.projects .btn {
+  background: #2f3061;
+  border-radius: 4px;
+  color: #f7fff7;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.projects .btn:hover {
+  background: rgba(47, 48, 97, 80%);
 }
 
 /* Work Experience
