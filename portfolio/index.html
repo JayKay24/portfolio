@@ -1,105 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JAMES KINYUA PORTFOLIO</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <main>
-      <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAMES KINYUA PORTFOLIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="content-wrap">
         <h1>James Kinyua Njuguna</h1>
         <h2>Software Engineer</h2>
 
         <p>
-          Add your profile copy here. Add more paragraphs or links as needed.
-          Here is some dummy text: Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus
-          neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc
-          scelerisque vestibulum augue, sit amet hendrerit ante.
+          I have a deep passion for software engineering and I’m always amazed by the things accomplished by teams that
+          are part
+          of this craft. From feats such as building a simple mobile or web application, to building software systems
+          used to
+          power an entire spacecraft. I'm always up for joining such amazing teams.
+          I am an experienced Software Engineer with a demonstrated history of working in computer science, information
+          technology, and the services industry. Skilled in JavaScript, React, Node.js, SASS, and Github. Strong
+          engineering
+          professional with a Bachelor’s Degree focused in Information Technology from Mount Kenya University.
         </p>
-        <p>Add another paragraph if needed.</p>
-      </header>
+      </div>
+    </header>
 
-      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section class="projects">
+    <section class="projects">
+      <div class="content-wrap divider">
         <h2>Featured Projects</h2>
         <p>
-          View selected projects below. More information can be found at
-          <a href="http://christinatruong.com">christinatruong.com</a>.
+          View selected projects below. More information can be found at my
+          <a href="https://github.com/JayKay24">Github</a>.
         </p>
 
-        <!-- Copy the whole <section> block to add more projects. -->
-        <section>
-          <h3>Node E-Commerce</h3>
-          <img
-            src="images/thumbnail-1.jpg"
-            alt="a shopping application built on node.js"
-          />
+        <section class="project-item">
+          <img src="images/crown-clothing.png" alt="a shopping application built with React" />
+          <h3>Crown Clothing</h3>
           <p>
-            Summary or description of the project and/or your role in it. Add as
-            many paragraphs as you need.
+            Online retail store that deals with buying and selling of clothes.
           </p>
-          <a class="btn" href="#" target="_blank">View project / case study</a>
+          <a class="btn" href="https://github.com/JayKay24/crown-clothing">View project</a>
         </section>
-        <!-- End of Project block. -->
-      </section>
 
-      <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section class="work-experience">
+        <section class="project-item">
+          <img src="images/ticketing.png" alt="an e-commerce application built leveraging microservices" />
+          <h3>Event Ticketing</h3>
+          <p>
+            E-commerce application that facilitates the buying and selling of tickets for events.
+          </p>
+          <a class="btn" href="https://github.com/JayKay24/Event-Ticketing">View project</a>
+        </section>
+      </div>
+    </section>
+
+    <section class="work-experience">
+      <div class="content-wrap item-details divider">
         <h2>Work Experience</h2>
         <p>
-          Optional paragraph for work experience summary. Not a part of the job
-          details. Delete if not being used.
+          Optional paragraph for work experience summary. Not a part of the
+          job details. Delete if not being used.
         </p>
 
-        <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
-          <h3>Job title</h3>
-          <p>Company Name</p>
-          <p>Date at job</p>
-          <p>Job summary goes here. Add as many paragraphs as you need.</p>
-          <p>Optional list:</p>
-          <ul>
-            <li>Delete this list if you don't need it.</li>
-            <li>Created...</li>
-            <li>Lead...</li>
-            <li>Responsible for...</li>
-          </ul>
+        <section class="job-item">
+          <div class="job-details">
+            <h3>Software Engineer</h3>
+            <p>Andela</p>
+            <p>July 2017 - Sept 2020</p>
+          </div>
+          <div class="job-summary">
+            <p>Summary</p>
+            <ul>
+              <li>Built an improved version of a modal that better captured the details of a mentorship request and made
+                it possible for
+                mentees to become mentors. The modal had additional checkboxes and input fields.</li>
+              <li>Performed a progressive phasing out of Bootstrap CSS in favor of SCSS to make the app lean and provide
+                a greater degree
+                of development control.</li>
+              <li>Cleaned up SQL queries by removing unnecessary joins from older REST API endpoint implementations and
+                thus making
+                subsequent database(PostgreSQL) reads faster.</li>
+            </ul>
+          </div>
         </section>
-        <!-- End of Job block. -->
-      </section>
+        <section class="job-item">
+          <div class="job-details">
+            <h3>Software Engineer</h3>
+            <p>Thrive Global</p>
+            <p>Oct 2019 - May 2020</p>
+          </div>
+          <div class="job-summary">
+            <p>Summary</p>
+            <ul>
+              <li>Built a responsive modal for a React.js internal admin dashboard, used to capture and send form data
+                to a REST API
+                which communicated with various microservices as part of a larger architecture.</li>
+              <li>The initial implementation of the form used multiple `useState` hooks to capture data, I migrated this
+                state
+                management to a single `useReducer` hook to remove clutter in the code brought about by this.</li>
+              <li>Increased coverage of end-to-end tests for the admin dashboard leveraging the Cypress library and
+                integration tests
+                leveraging React-Testing Library.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="job-item">
+          <div class="job-details">
+            <h3>Software Engineer</h3>
+            <p>Boundless Mind</p>
+            <p>Nov 2018 - Oct 2019</p>
+          </div>
+          <div class="job-summary">
+            <p>Summary</p>
+            <ul>
+              <li>Implemented design templates for a customer dashboard generated using Invision which included
+                multi-step forms with
+                modals and charts used to capture client configuration data for the iOS, Android and Typescript SDKs.
+              </li>
+              <li>Used SCSS and Pug template engine for the styling and markup and HighCharts library for implementing
+                the chart views.</li>
+              <li>Built a Typescript SDK that mirrored our iOS and Android SDKs to achieve reachability on Web app
+                clients. Also leveraged
+                the TypeDocs library to render HTML documentation for the SDK which I eventually uploaded to an Amazon
+                S3 bucket for
+                easy access.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
 
-      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section class="education">
+    <section class="education">
+      <div class="content-wrap item-details">
         <h2>Education</h2>
 
-        <!-- Copy this whole <section> block to add more schools. -->
         <section>
-          <h3>School name - City</h3>
-          <p>Designation received or program name, year attended</p>
-          <p>Summary or accomplishments.</p>
+          <h3>Mount Kenya University - Thika</h3>
+          <p>Bachelor of Science in Information Technology, 2012 - 2016</p>
+          <p>
+            Mount Kenya University Research and Innovation Students
+            Association
+          </p>
         </section>
-        <!-- End of School block. -->
-      </section>
+      </div>
+    </section>
 
-      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-      <footer>
+    <footer>
+      <div class="content-wrap">
         <h2>Let's Keep in Touch!</h2>
 
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <ul>
-          <li><a href="mailto:email@example.com">email@example.com</a></li>
-          <li>
-            <a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a>
-          </li>
-          <li><a href="#" target="_blank">Twitter</a></li>
-          <li><a href="#" target="_blank">LinkedIn</a></li>
-          <li><a href="#" target="_blank">Facebook</a></li>
+        <ul class="contact-list">
+          <li><a href="https://www.linkedin.com/in/james-kinyua-njuguna/" target="_blank">LinkedIn</a></li>
         </ul>
-      </footer>
-    </main>
-  </body>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>
